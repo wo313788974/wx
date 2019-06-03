@@ -1,0 +1,97 @@
+/* pages/details/details.wxss */
+.main {
+  padding: 10rpx;
+  color: #666;
+}
+.videoInfo {
+  margin-top: 10rpx;
+}
+.videoInfo video {
+  width: 100%;
+}
+.video_title {
+  font-size: 32rpx;
+}
+.video_detail {
+  margin-top: 10rpx;
+  font-size: 28rpx;
+}
+.video_detail text {
+  margin-left: 20rpx;
+}
+.author {
+  color: #000;
+  margin-left: 0!important;
+}
+.recommend_item {
+  margin-top: 10rpx;
+  padding: 10rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.image {
+  width: 30%;
+  position: relative;
+}
+.image image {
+  width: 100%;
+  border-radius: 10rpx;
+}
+.image .duration {
+  position: absolute;
+  padding: 0 5rpx;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 20rpx;
+}
+.item_info {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-size: 28rpx;
+}
+.item_info .title {
+  color: #e06f93;
+}
+.item_info .other_info {
+  color: #666;
+  font-size: 26rpx;
+}
+.comment_wrap {
+  margin-top: 10rpx;
+  padding: 10rpx;
+}
+.total_count {
+  font-size: 28rpx;
+}
+.comment_item {
+  padding: 5rpx;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1rpx solid #eee;
+}
+.comment_item .avator {
+  flex: 1;
+}
+.comment_item  .avator image {
+  width: 60%;
+  border-radius: 50%;
+}
+.comment_info {
+  flex: 5;
+  font-size: 26rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.comment_info .top {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom {
+  margin-top: 20rpx;
+}

@@ -1,0 +1,16 @@
+<!--components/header/header.wxml-->
+<view class="main">
+  <view class="logo_wrap">
+    <image style="width:140rpx;height:60rpx" mode="widthFix" class="logo" src="../../images/BILIBILI_LOGO.png"></image>
+  </view>
+  <view class="search">
+    <input type="text" placeholder="just a demo"/>
+    <icon type="search" size="18"/>
+  </view>
+  <view class="user_wrap">
+    <image style="width:60rpx;height:44rpx" mode="widthFix" class="user" src="../../images/CN_bilibili B.png"></image>
+  </view>
+  <view class="download_wrap">
+      下载App
+  </view>
+</view>

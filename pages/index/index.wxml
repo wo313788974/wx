@@ -1,0 +1,38 @@
+<!-- index.wxml -->
+<view class="main">
+  <!-- Header -->
+  <header></header>
+  <!-- NavList -->
+  <view class="nav_wrap">
+    <scroll-view class="nav" scroll-x>
+      <view bindtap="activeItem" data-index="{{index}}" class="nav_item {{index === currentIndex? 'active': ''}}" wx:for="{{navList}}" wx:key="{{index}}">
+        {{item.text}}
+      </view>
+    </scroll-view>
+  </view>
+  <!-- Swiper -->
+  <view class="swiper_wrap">
+    <swiper class="swiper_item" indicator-dots="true" autoplay="true">
+      <block wx:for="{{swiperList}}" wx:key="{{index}}">
+        <swiper-item>
+          <image mode="widthFix" class="swiper-image" src="{{item.imgSrc}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- Video List -->
+  <view class="video_wrap">
+      <navigator url="../details/details?id={{item.id}}" class="video_item" wx:for="{{videosList}}" wx:key="{{index}}">
+        <view class="video_image">
+          <image mode="widthFix" src="{{item.imgSrc}}"></image>
+          <view class="video_info">
+            <text>播放：{{item.playCount}}</text>
+            <text>评论：{{item.commentCount}}</text>
+          </view>
+        </view>
+        <view class="image_desc">
+          {{item.desc}}
+        </view>
+      </navigator>
+  </view>
+</view>
